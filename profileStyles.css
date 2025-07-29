@@ -1,0 +1,157 @@
+/* Removes all default margins and padding to easily adjust all element's margins */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Adds custom fonts and fallback fonts and sets a background color */
+body {
+    font-family:  'Monocraft', 'Press Start 2P', 'Courier New', Courier, monospace;
+    background-color: lightblue;
+}
+
+/* Navbar */
+.navbar-list {
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    list-style-type: none;
+}
+.navbar-list-element {color: rgb(195, 94, 94);}
+.navbar-list-element > a {
+    color: rgb(195, 94, 94);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar-list-element:hover,  .navbar-list-element > a:hover{
+    color: green;
+    cursor: pointer;
+}
+#go-back-btn > a {
+    background-color: black;
+    padding: 10px;
+    color: rgb(242, 255, 0);
+}
+
+
+/* Header */
+header {
+    text-align: center;
+}
+header > h1 {
+    color: rgb(0, 34, 255);
+    font-size: 4.5rem;
+}
+
+/* Main section */
+main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Each container in this class will be centered */
+.information {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.context {
+    width: 25%;
+    padding: 12px;
+    margin: 12px;
+    box-shadow: -5px 5px blue, -10px 10px 0px rgb(195, 94, 94);
+    background-color: rgb(73, 148, 43);
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.gamePrompt {
+    width: 45%;
+    padding: 12px;
+    margin: 12px;
+    box-shadow: 5px 5px blue, 10px 10px 0px rgb(195, 94, 94);
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 4);
+    text-align: center;
+}
+.games {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.videoGame {
+    width: 500px;
+    height: auto;
+    padding: 12px;
+    background-color: rgb(163, 186, 226);
+    margin: 12px;
+    text-align: center;
+    border: 2px solid blue;
+    
+}
+.videoGame > p {
+    margin: 8px;
+}
+.videoGame > p > span {
+    color: black;
+    background-color: black;
+}
+.vg-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+/* Footer */
+footer {
+    margin-top: 24px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+footer > p {
+    font-size: 18px;
+    color: white;
+}
+
+/* Media Query that allows for website to fit mobile devices 
+    with a screen width of less than 600px*/
+@media only screen and (max-width: 600px) {
+    header > h1 {
+        font-size: 50px;
+    }
+    .navbar-list {
+        text-align: center;
+        flex-direction: column;
+    }
+    .navbar-list-element {
+        margin: 10px;
+    }
+    .information {
+        flex-direction: column;
+        align-items: center;
+    }
+    .context, .gamePrompt {
+        width: 50%;
+    }
+    .videoGame {
+        width: 75%;
+        font-size: 12px;
+        padding: 12px;
+    }
+  }

@@ -1,0 +1,88 @@
+/* YOUR STYLES HERE */
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+#menu {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    font-size: 18px;
+    color: rgb(240, 243, 101);
+    margin: 0px 10px;
+    text-decoration: none;
+}
+.menu-item:hover {
+    text-decoration: underline;
+    text-shadow: 0px 0px 24px rgb(240, 243, 101);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#profile-pic {
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+}
+
+#profile-pic:hover {
+    box-shadow: 0px 0px 10px rgb(240, 243, 101);
+}
+
+#store-link {
+    margin-right: auto;
+}
+
+#search {
+    margin-top: 120px;
+    text-align: center;
+}
+
+#main-logo {
+    width: 272px;
+}
+
+#search-bar {
+    height: 34px;
+    font-size: 17px;
+    border: 5px solid rgb(240, 246, 61);
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    background-color: rgba(243, 244, 192, 0.989);
+}
+
+#search-bar:hover, 
+#search-bar:focus {
+    box-shadow: 0px 0px 24px rgb(240, 246, 61);
+}
+
+#search-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-button {
+    margin: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(240, 243, 101);
+
+    border: 3px solid rgb(240, 246, 61);
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+.search-button:hover {
+    box-shadow: 0px 0px 12px rgb(240, 246, 61);
+}

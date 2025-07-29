@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sergio Chavez</title>
+    <link rel="stylesheet" type="text/css" href="profileStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li id="go-back-btn" class="navbar-list-element"><a href="index.html">Want to go back?</a></li>
+
+        <!-- When this button is clicked, it calls the goYoutube() which can take the user to Youtube  -->
+        <li class="navbar-list-element" onclick="goToYoutube()">Free Youtube Break?</li>
+
+        <!-- When the button is clicked, the game can begin -->
+        <li class="navbar-list-element"><a onclick="game()">Let's Play a game?</a></li>
+      </ul>
+    </nav>
+
+    <!-- Title and subheader for the website -->
+    <header>
+      <h1 id="siteTitle">My Favorite Video Games</h1>
+      <p>by: Sergio Chavez, a gamer</p>
+    </header>
+
+    <!-- Main Section of the website -->
+    <main>
+
+      <!-- Information Section -->
+      <div class="information">
+
+        <!-- Context section that describes why I like games and 5 personal recommendations for anyone to try out -->
+        <section class="context">
+          <h2>Why should I even play a game?</h2>
+          <br/>
+          <div class="textsection">
+            <p> - We all need a break sometimes, 
+              and what better way to aleviate some stress 
+              than playing some games? Here are 5 of my favorite games to play
+              when I am bored: </p>
+          </div>
+        </section>
+
+        <!-- Displays information about the game itself -->
+        <section class="gamePrompt">
+          <h2>Want to actually <i>play</i> a game instead?</h2>
+          <br/>
+          <div class="textsection">
+            <!-- When the link inside this paragraph is clicked, the game will be ran -->
+            <!-- This link acts as a second way to access the main game -->
+            <p> - If you do, click the last element in the navigation bar that says 
+              <span>"Let's Play a game?"</span> 
+              Of course, you could also just go ahead and go on Youtube...unless...
+              Anyways, I know if you are looking at this you might be a gamer. 
+              Well let's see if you truly are a gamer. 
+              Click <a href="#" onclick="game()">here</a> 
+              or the last link in the naviagtion bar at the top to test your knowledge!</p>
+          </div>
+      </div>
+      
+      
+      <!-- Section that contains each game's picture and a short description of it -->
+      <section class="games">
+        <div class="videoGame">
+          <img class="vg-image" src="profileImages/ssbu-image.avif" alt="smash bros logo">
+          <p><i>Super Smash Bros. Ultimate</i></p>
+          <p>
+            This is a fighting game that is great for playing on your own or with friends! 
+            It has the fighting spirit of <i>Street Fighter</i> and the style of <i>Mario Kart</i>.
+          </p>
+        </div>
+        <div class="videoGame">
+          <img class="vg-image" src="profileImages/minecraft.avif" alt="minecraft logo">
+          <p><i>Minecraft</i></p>
+          <p>
+            This game is great after a long day. 
+            You can build whatever you want or survive out in the wild. 
+            The choice is yours! <span>(my personal favorite)</span>
+          </p>
+        </div>
+        <div class="videoGame">
+          <img class="vg-image" src="profileImages/fortnite.webp" alt="fortnite logo">
+          <p><i>Fortnite</i></p>
+          <p>
+            This game is great with friends if you're into building and being the best out of 100 other players! 
+            It's also more child-friendly than most other shooter games.
+          </p>
+        
+        </div>
+        <div class="videoGame">
+          <img class="vg-image" src="profileImages/valorant.jpeg" alt="valorant logo ">
+          <p><i>Valorant</i></p>
+          <p>
+            This is a more competitive game that challenges only the best shooter game enthusiasts. 
+            (would NOT recommend if you get made easily)
+          </p>
+        
+        </div>
+        <div class="videoGame">
+          <img class="vg-image" src="profileImages/mk8deluxe.avif" alt="mario-kart logo">
+          <p><i>Mario Kart 8 Deluxe</i></p>
+          <p>
+            This is a classic driving game that is fun for people of all ages to play. 
+            Regardless of skill level, it's very fun! Like valorant, I DO NOT recommend for people who get mad easily...
+          </p>
+        </div>
+      </section>
+    
+      
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>Play on!</p>
+    </footer>
+
+    <script src="profile.js"></script>
+  </body>
+</html>
